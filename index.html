@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Cancelamento - AprovaCCA</title>
+    <link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logo-aprovacca.png" alt="Logo AprovaCCA" class="logo">
+            <h1>CARTA DE CANCELAMENTO</h1>
+        </div>
+        <form id="cancellationForm">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+                <div class="form-group">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div class="form-group">
+                    <label for="nomeCompleto">Nome completo:</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+                </div>
+                <div class="form-group">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Cancelamento</legend>
+                <div class="form-group">
+                    <input type="checkbox" id="comerciais" name="tipoCancelamento" value="Comerciais">
+                    <label for="comerciais">Comerciais</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="habitacionais" name="tipoCancelamento" value="Habitacionais">
+                    <label for="habitacionais">Habitacionais</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="aberturaConta" name="tipoCancelamento" value="Abertura de conta">
+                    <label for="aberturaConta">Abertura de conta</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Assinatura Digital</legend>
+                <div class="form-group">
+                    <label for="nomeAssinatura">Nome para assinatura:</label>
+                    <input type="text" id="nomeAssinatura" name="nomeAssinatura" placeholder="Digite seu nome completo" required>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="button" id="visualizarCarta">Visualizar Carta</button>
+                <button type="button" id="baixarPdf">Baixar PDF</button>
+                <button type="button" id="limparFormulario">Limpar Formulário</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
