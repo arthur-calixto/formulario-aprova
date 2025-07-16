@@ -1,0 +1,167 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    background-color: #ff8c00; /* Laranja */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    padding: 30px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff8c00; /* Laranja */
+    margin-bottom: 15px;
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #ff8c00; /* Laranja */
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+input[type="checkbox"] + label {
+    display: inline;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#visualizarCarta {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#visualizarCarta:hover {
+    background-color: #218838;
+}
+
+#baixarPdf {
+    background-color: #ff8c00; /* Laranja */
+    color: #fff;
+}
+
+#baixarPdf:hover {
+    background-color: #e07b00;
+}
+
+#limparFormulario {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#limparFormulario:hover {
+    background-color: #545b62;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+    }
+    
+    form {
+        padding: 20px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
+
+
