@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = document.getElementById('data').value;
         const nomeCompleto = document.getElementById('nomeCompleto').value.trim();
         const cpf = document.getElementById('cpf').value.trim();
-        const nomeAssinatura = document.getElementById('nomeAssinatura').value.trim();
+        const nomeAssinatura = document.getElementById('nomeCompleto').value.trim();
         const tiposCancelamento = Array.from(document.querySelectorAll('input[name="tipoCancelamento"]:checked'));
 
         if (!cidade) {
