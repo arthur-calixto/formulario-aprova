@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Montar o texto da carta igual ao PDF
         const letterContent = `${cidade}, ${dia} de ${mes} de ${ano}.
 
-Eu, ${nomeCompleto} e CPF ${cpf}, domiciliado no endereço: Uberlândia - MG, solicito o cancelamento de todas as avaliações e propostas:
+Eu, ${nomeCompleto} portanto do CPF ${cpf}, domiciliado no endereço: Uberlândia - MG, solicito o cancelamento de todas as avaliações e propostas:
 
 ${tiposCancelamento.join('\n')}
 
