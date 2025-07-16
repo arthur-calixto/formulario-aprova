@@ -228,7 +228,7 @@ ${nomeCompleto}`;
                 const data = new Date(document.getElementById('data').value).toLocaleDateString('pt-BR');
                 const nomeCompleto = document.getElementById('nomeCompleto').value.trim();
                 const cpf = document.getElementById('cpf').value.trim();
-                const nomeAssinatura = document.getElementById('nomeAssinatura').value.trim();
+                const nomeAssinatura = document.getElementById('nomeCompleto').value.trim();
 
                 // Configurações de margem e posição - melhor tabulação
                 const margemEsquerda = 25;
@@ -325,7 +325,7 @@ ${nomeCompleto}`;
                 const cidade = document.getElementById('cidade').value.trim();
                 const nomeCompleto = document.getElementById('nomeCompleto').value.trim();
                 const cpf = document.getElementById('cpf').value.trim();
-                const nomeAssinatura = document.getElementById('nomeAssinatura').value.trim();
+                const nomeAssinatura = document.getElementById('nomeCompleto').value.trim();
 
                 const margemEsquerda = 25;
                 const larguraPagina = 210;
