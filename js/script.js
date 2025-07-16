@@ -298,7 +298,7 @@ Nome e assinatura do solicitante`;
 
                 // Despedida
                 doc.text('Atenciosamente,', margemEsquerda, posicaoY);
-                posicaoY += 50;
+                posicaoY += 15;
 
                 // Linha de assinatura
                 doc.line(margemEsquerda, posicaoY, margemEsquerda + 100, posicaoY);
