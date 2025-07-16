@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Montar o texto da carta igual ao PDF
         const letterContent = `${cidade}, ${dia} de ${mes} de ${ano}.
 
-Eu, ${nomeCompleto} portador do CPF ${cpf}, domiciliado no endereço: Uberlândia - MG, solicito o cancelamento de todas as avaliações e propostas:
+Eu, ${nomeCompleto} portador do CPF ${cpf}, domiciliado na cidade de Uberlândia - MG, solicito o cancelamento de todas as avaliações e propostas:
 
 ${tiposCancelamento.join('\n')}
 
@@ -240,7 +240,7 @@ Nome e assinatura do solicitante`;
                 doc.setFontSize(16);
                 doc.setFont('helvetica', 'bold');
                 doc.text('CARTA DE CANCELAMENTO', larguraPagina/2, posicaoY, { align: 'center' });
-                posicaoY += 30;
+                posicaoY += 25;
 
                 // Data alinhada à direita
                 doc.setFontSize(12);
@@ -255,7 +255,7 @@ Nome e assinatura do solicitante`;
                 // Formato: "Cidade, dd/mm/aaaa."
                 const textoData = `${cidade}, ${dia}/${mes}/${ano}.`;
                 doc.text(textoData, margemDireita, posicaoY, { align: 'right' });
-                posicaoY += 25;
+                posicaoY += 20;
 
                 // Primeiro parágrafo em uma linha só
                 const textoCompleto = `Eu, ${nomeCompleto.toUpperCase()}, portador(a) do CPF ${cpf}, solicito o cancelamento de todas as avaliações e propostas:`;
@@ -294,7 +294,7 @@ Nome e assinatura do solicitante`;
                     posicaoY += 12;
                 });
                 
-                posicaoY += 20;
+                posicaoY += 10;
 
                 // Despedida
                 doc.text('Atenciosamente,', margemEsquerda, posicaoY);
