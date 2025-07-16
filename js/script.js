@@ -119,9 +119,9 @@ Atenciosamente,
 
 
 _____________________________________________________
-Nome e assinatura do solicitante
+${nomeCompleto}
 
-${nomeCompleto}`;
+Nome e assinatura do solicitante`;
 
         return letterContent;
     };
